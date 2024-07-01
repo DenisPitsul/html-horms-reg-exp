@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Contact form</title>
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="form-head">Contact Form</h1>
+      <p class="form-desc">
+        Please fill in your information and we'll be sending your order.
+      </p>
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="first-name" class="form-label">Your name</label>
+          <div class="inputs-wrapper">
+            <input
+              class="form-input name-input"
+              id="first-name"
+              type="text"
+              name="firstName"
+              placeholder="First name"
+              minlength="2"
+              maxlength="32"
+              pattern="[A-Z][a-z]*"
+              required
+              autofocus
+            />
+            <input
+              class="form-input name-input"
+              type="text"
+              name="lastName"
+              placeholder="Last name"
+              minlength="2"
+              maxlength="32"
+              pattern="[A-Z][a-z]{1,31}(-[A-z][a-z]{1,31})?"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="email" class="form-label">Your email</label>
+          <input
+            id="email"
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="test@gmail.com"
+            required
+          />
+          </label>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="phone-head" class="form-label">Phone</label>
+            <div class="inputs-wrapper">
+              <input
+                id="phone-head"
+                class="form-input tel-input"
+                type="tel"
+                name="phoneHead"
+                minlength="3"
+                maxlength="3"
+                placeholder="000"
+                required
+              />
+              </label>
+              <input
+                class="form-input tel-input"
+                type="tel"
+                name="phoneMiddle"
+                minlength="3"
+                maxlength="3"
+                placeholder="000"
+                required
+              />
+              <input
+                class="form-input tel-input"
+                type="tel"
+                name="phoneEnd"
+                pattern="\d{4}"
+                placeholder="0000"
+                minlength="4"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+        <div class="form-row">
+          <label for="message-subject" class="form-label">Message subject</label>
+          <select id="message-subject" class="message-select" required name="messageSubject">
+            <option value="jokes">Jokes</option>
+            <option value="promotional">Promotional</option>
+            <option value="congratulations">Congratulations</option>
+            <option value="revision">Revision</option>
+            <option value="snapshot">Snapshot</option>
+            <option value="voluntary">Voluntary</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            id="message"
+            class="form-textarea"
+            name="message"
+            minlength="10"
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <div class="button-wrapper">
+          <button class="submit-btn">SUBMIT FORM</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

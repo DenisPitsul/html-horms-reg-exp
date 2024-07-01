@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main {
+  box-shadow: 0 0 20px 10px black;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 300px;
+  margin: 20px 40px;
+}
+
+.form-head {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-desc {
+  font-size: 16px;
+}
+
+.contact-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex: 1 1 730px;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 0 0 160px;
+}
+
+.form-input {
+  flex: 1 1 360px;
+  padding: 10px;
+  outline: none;
+}
+
+.name-input {
+  flex: 1 1 180px;
+}
+
+.tel-input {
+  flex: 1 1 120px;
+}
+
+.form-input:valid,
+.form-textarea:valid {
+  border: 1px solid green;
+  background-color: aquamarine;
+}
+
+.form-input:invalid,
+.form-textarea:invalid {
+  border: 1px solid red;
+  background-color: lightpink;
+}
+
+.message-select {
+  flex: 1 1 730px;
+  padding: 10px;
+  outline: none;
+}
+
+.form-textarea {
+  flex: 1 1 730px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  height: 120px;
+}
+
+.valid {
+  border: 1px solid green;
+  background-color: aquamarine;
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: lightpink;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: end;
+  padding-left: 175px;
+}
+
+.submit-btn {
+  flex: 1 1 730px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+}
