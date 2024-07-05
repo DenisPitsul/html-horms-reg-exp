@@ -36,7 +36,7 @@
               name="lastName"
               placeholder="Last name"
               minlength="2"
-              maxlength="32"
+              maxlength="65"
               pattern="[A-Z][a-z]{1,31}(-[A-z][a-z]{1,31})?"
               required
             />
@@ -44,55 +44,63 @@
         </div>
         <div class="form-row">
           <label for="email" class="form-label">Your email</label>
-          <input
-            id="email"
-            class="form-input"
-            type="email"
-            name="email"
-            placeholder="test@gmail.com"
-            required
-          />
-          </label>
-        </div>
-        <form class="contact-form">
-          <div class="form-row">
-            <label for="phone-head" class="form-label">Phone</label>
-            <div class="inputs-wrapper">
-              <input
-                id="phone-head"
-                class="form-input tel-input"
-                type="tel"
-                name="phoneHead"
-                minlength="3"
-                maxlength="3"
-                placeholder="000"
-                required
-              />
-              </label>
-              <input
-                class="form-input tel-input"
-                type="tel"
-                name="phoneMiddle"
-                minlength="3"
-                maxlength="3"
-                placeholder="000"
-                required
-              />
-              <input
-                class="form-input tel-input"
-                type="tel"
-                name="phoneEnd"
-                pattern="\d{4}"
-                placeholder="0000"
-                minlength="4"
-                maxlength="4"
-                required
-              />
-            </div>
+          <div class="inputs-wrapper">
+            <input
+              id="email"
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="test@gmail.com"
+              required
+            />
           </div>
+        </div>
         <div class="form-row">
-          <label for="message-subject" class="form-label">Message subject</label>
-          <select id="message-subject" class="message-select" required name="messageSubject">
+          <label for="phone-head" class="form-label">Phone</label>
+          <div class="inputs-wrapper">
+            <input
+              id="phone-head"
+              class="form-input tel-input"
+              type="tel"
+              name="phoneHead"
+              pattern="\d{3}"
+              minlength="3"
+              maxlength="3"
+              placeholder="000"
+              required
+            />
+            <input
+              class="form-input tel-input"
+              type="tel"
+              name="phoneMiddle"
+              pattern="\d{3}"
+              minlength="3"
+              maxlength="3"
+              placeholder="000"
+              required
+            />
+            <input
+              class="form-input tel-input"
+              type="tel"
+              name="phoneEnd"
+              pattern="\d{4}"
+              placeholder="0000"
+              minlength="4"
+              maxlength="4"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="message-subject" class="form-label"
+            >Message subject</label
+          >
+          <select
+            id="message-subject"
+            class="message-select"
+            required
+            name="messageSubject"
+          >
             <option value="jokes">Jokes</option>
             <option value="promotional">Promotional</option>
             <option value="congratulations">Congratulations</option>
